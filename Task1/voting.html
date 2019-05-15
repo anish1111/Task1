@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+body {
+  margin: 0;
+  font-family: Ayuthaya;
+  font-weight:normal;
+  background-image:url(base.jpg)
+}
+
+.header {
+  /* text-align: center; */
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.mid-left {
+  position: absolute;
+  top: 28%;
+  left: 16px;
+}
+.bottom {
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  /* transform: translate(-50%, -50%); */
+}
+.cebterful {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  /* transform: translate(-50%, -50%); */
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #58CFB9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+/* .button:hover {background-color: #097964} */
+
+.button:active {
+  background-color: #097964;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .centerful {
+    margin-top:50% !important;
+  }
+
+
+}
+.top-lefty {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 10px 10px 5px grey;
+
+  /* transform: translate(-50%, -50%); */
+}
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.button {
+  position: absolute;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #58CFB9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left: 70%;
+  margin-top:-10%;
+}
+/* .button:hover {background-color: #097964} */
+
+.button:active {
+  background-color: #097964;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.img1 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 65%;
+  left: 10%;
+  margin-left: -60px;
+}
+
+.img1 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.img1:hover .tooltiptext {
+  visibility: visible;
+}
+.img2 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 65%;
+  left: 20%;
+  margin-left: -60px;
+}
+
+.img2 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.img2:hover .tooltiptext {
+  visibility: visible;
+}
+.img3 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 65%;
+  left: 32%;
+  margin-left: -60px;
+}
+
+.img3 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.img3:hover .tooltiptext {
+  visibility: visible;
+}
+.img4 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 65%;
+  left: 43%;
+  margin-left: -60px;
+}
+
+.img4 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.img4:hover .tooltiptext {
+  visibility: visible;
+}
+.img5 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 65%;
+  left: 55%;
+  margin-left: -60px;
+}
+
+.img5 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.img5:hover .tooltiptext {
+  visibility: visible;
+}
+
+</style>
+<body>
+
+
+<div class="top-lefty" style="width:100%;background-color:white">
+  <img src="logo.png" alt="" style="height:63px;margin-left:2%">
+</div>
+<div class="header top-left">
+ <strong><p style="font-size:40px">Department: Facilities</p></strong>
+ <p>Loremipsumdolorsitamet,consecteturadipiscingelit.Nuncplaceraturnanecquamconvallis,utmollis
+duivulputate.Sedidturpisvitaelacusportaaliquetlobortisquisnisi.Utegetmollisodio.</p>
+
+</div>
+<div class="header mid-left">
+  <p><strong>Choose your mascot for this department</strong> (hover over each mascot to know it’s meaning)</p>
+
+</div>
+<button type="button" class="button" onclick="#"  name="button">Move on to the next department</button>
+
+
+
+
+<div class="row header centerful" style="margin-top:25% ;margin-left:3%; background-color:white;width:60%;border:1px solid grey;">
+  <div class="column img1" style="margin-left:4%;">
+    <img src="whale.png" style="width:100%">
+    <span class="tooltiptext">My work/the attributes in itiative is not having direction and needs greater mentorship or leadership</span>
+  </div>
+  <div class="column img2" style="margin-left:1%;">
+    <img src="oyster.png" style="width:100%">
+    <span class="tooltiptext">My work/the attributes in itiative is not having direction and needs greater mentorship or leadership</span>
+  </div>
+  <div class="column img3" style="margin-left:1%;">
+    <img src="goose.png" onclick="" style="width:100%">
+    <span class="tooltiptext">My work/the attributes in itiative is not having direction and needs greater mentorship or leadership</span>
+  </div>
+  <div class="column img4" style="margin-left:1%;">
+    <img src="meow.png" style="width:100%">
+    <span class="tooltiptext">My work/the attributes in itiative is not having direction and needs greater mentorship or leadership</span>
+  </div>
+  <div class="column img5" style="margin-left:1%;">
+    <img src="elephant.png" style="width:100%">
+    <span class="tooltiptext">My work/the attributes in itiative is not having direction and needs greater mentorship or leadership</span>
+  </div>
+</div>
+<div id="goose" style="display:none" class="row">
+  <div class="column" style="margin-left:2%">
+    <p>Share your reasons for <span style="color:red;">Wild Goose Chase</span></p>
+    <label class="container">Its Good
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Its Nice
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Its awesome
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+  </div>
+  <div class="column" style="margin-left:15%;">
+    <p><strong>Any more reasons</strong></p>
+    <textarea rows="8" cols="50">
+
+</textarea>
+
+  </div>
+  <div class="column" style="margin-left:8%;">
+    <p><strong>Suggestions</strong></p>
+    <textarea rows="8" cols="50">
+
+</textarea>
+  </div>
+
+</div>
+
+<div id="goose" style="display:none" class="row">
+  <div class="column" style="margin-left:2%">
+    <p>Share your reasons for <span style="color:red;">Wild Goose Chase</span></p>
+    <label class="container">Its Good
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Its Nice
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Its awesome
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+  </div>
+  <div class="column" style="margin-left:15%;">
+    <p><strong>Any more reasons</strong></p>
+    <textarea rows="8" cols="50">
+
+</textarea>
+
+  </div>
+  <div class="column" style="margin-left:8%;">
+    <p><strong>Suggestions</strong></p>
+    <textarea rows="8" cols="50">
+
+</textarea>
+  </div>
+
+</div>
+
+<div id="whale" style="display:none" class="row">
+  <div class="column" style="margin-left:2%">
+    <p>Share your reasons for <span style="color:red;">Whale of a time</span></p>
+    <label class="container">Its Good
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Its Nice
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Its awesome
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+  </div>
+  <div class="column" style="margin-left:15%;">
+    <p><strong>Any more reasons</strong></p>
+    <textarea rows="8" cols="50">
+
+</textarea>
+
+  </div>
+  <div class="column" style="margin-left:8%;">
+    <p><strong>Suggestions</strong></p>
+    <textarea rows="8" cols="50">
+
+</textarea>
+  </div>
+
+</div>
+
+<div id="meow" style="display:none" class="row">
+  <div class="column" style="margin-left:2%">
+    <p>Share your reasons for <span style="color:red;">Cat's Meow</span></p>
+    <label class="container">Its Good
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Its Nice
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Its awesome
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+  </div>
+  <div class="column" style="margin-left:15%;">
+    <p><strong>Any more reasons</strong></p>
+    <textarea rows="8" cols="50">
+
+</textarea>
+
+  </div>
+  <div class="column" style="margin-left:8%;">
+    <p><strong>Suggestions</strong></p>
+    <textarea rows="8" cols="50">
+
+</textarea>
+  </div>
+
+</div>
+
+<div id="oyster" style="display:none" class="row">
+  <div class="column" style="margin-left:2%">
+    <p>Share your reasons for <span style="color:red;">World is my Oyster</span></p>
+    <label class="container">Its Good
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Its Nice
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Its awesome
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+  </div>
+  <div class="column" style="margin-left:15%;">
+    <p><strong>Any more reasons</strong></p>
+    <textarea rows="8" cols="50">
+
+</textarea>
+
+  </div>
+  <div class="column" style="margin-left:8%;">
+    <p><strong>Suggestions</strong></p>
+    <textarea rows="8" cols="50">
+
+</textarea>
+  </div>
+
+</div>
+
+<div id="elephant" style="display:none" class="row">
+  <div class="column" style="margin-left:2%">
+    <p>Share your reasons for <span style="color:red;">Elephant in the room</span></p>
+    <label class="container">Its Good
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Its Nice
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Its Awesome
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+  </div>
+  <div class="column" style="margin-left:15%;">
+    <p><strong>Any more reasons</strong></p>
+    <textarea rows="8" cols="50">
+
+</textarea>
+
+  </div>
+  <div class="column" style="margin-left:8%;">
+    <p><strong>Suggestions</strong></p>
+    <textarea rows="8" cols="50">
+
+</textarea>
+  </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".img3").click(function(){
+    $("#goose").show();
+    $("#elephant").hide();
+    $("#meow").hide();
+    $("#oyster").hide();
+    $("#whale").hide();
+  });
+});
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".img5").click(function(){
+    $("#elephant").show();
+    $("#goose").hide();
+    $("#meow").hide();
+    $("#oyster").hide();
+    $("#whale").hide();
+  });
+  });
+
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".img4").click(function(){
+    $("#meow").show();
+    $("#elephant").hide();
+    $("#goose").hide();
+    $("#oyster").hide();
+    $("#whale").hide();
+  });
+  });
+
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".img2").click(function(){
+    $("#oyster").show();
+    $("#elephant").hide();
+    $("#meow").hide();
+    $("#goose").hide();
+    $("#whale").hide();
+  });
+  });
+
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".img1").click(function(){
+    $("#whale").show();
+    $("#elephant").hide();
+    $("#meow").hide();
+    $("#oyster").hide();
+    $("#goose").hide();
+  });
+  });
+
+</script>
+
+
+</body>
+</html>

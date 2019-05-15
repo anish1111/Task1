@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+body {
+  margin: 0;
+  font-family: Ayuthaya;
+  font-weight:normal;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bottom {
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  /* transform: translate(-50%, -50%); */
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #58CFB9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {background-color: #097964}
+
+.button:active {
+  background-color: #097964;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+</style>
+<body>
+
+<!-- Header -->
+<div class="header centered">
+  <img src="logo.png" alt="">
+  <h1 style="font-size:45px;">Welcome to election day!</h1>
+  <button type="button" class="button" onclick="location.href = 'tutorial.html';"  name="button">ELECT YOUR MASCOTS</button>
+</div>
+<div class="bottom">
+  <p>None of your personal details will be asked during the survey. Restassured, we are awesome.</p>
+
+</div>
+
+<div class="row">
+  <!-- <div class="column">
+    <img src="mi.png" style="width:100%">
+    <img src="dc.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="csk.png" style="width:100%">
+    <img src="srh.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="rcb.png" style="width:100%">
+    <img src="rr.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="kkr.png" style="width:100%">
+    <img src="kxip.jpeg" style="width:100%">
+  </div> -->
+  <img src="base.jpg" alt="" style="height:100%;width:100%">
+</div>
+
+</body>
+</html>
